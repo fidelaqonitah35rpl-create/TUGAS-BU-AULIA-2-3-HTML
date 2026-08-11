@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Pendaftaran Seminar Teknologi 2026</title>
+<style>
+    body {
+        font-family: "Times New Roman", Times, serif;
+        margin: 20px 40px;
+        color: #000;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border-bottom: 3px solid #000;
+        padding-bottom: 10px;
+    }
+    header img {
+        width: 70px;
+        height: 70px;
+    }
+    header h1 {
+        font-size: 28px;
+        margin: 0;
+    }
+    .tagline {
+        font-style: italic;
+        margin: 10px 0;
+    }
+    nav {
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+        padding: 8px 0;
+        margin-bottom: 15px;
+    }
+    nav a {
+        color: #6a1b9a;
+        text-decoration: underline;
+        margin-right: 5px;
+    }
+    .info p {
+        margin: 4px 0;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 700px;
+        margin-top: 15px;
+    }
+    caption {
+        border: 1px solid #000;
+        padding: 8px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    td, th {
+        border: 1px solid #000;
+        padding: 8px 10px;
+        text-align: left;
+        vertical-align: middle;
+    }
+    .label-col {
+        width: 25%;
+        font-weight: normal;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select {
+        width: 90%;
+        padding: 5px;
+        border: 1px solid #333;
+    }
+    .checkbox-group label {
+        display: block;
+        margin: 2px 0;
+        font-weight: normal;
+    }
+    .btn-row {
+        text-align: left;
+    }
+    button {
+        padding: 6px 18px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .summary-title {
+        text-align: center;
+        margin-top: 30px;
+        font-weight: bold;
+    }
+    .footer-note {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .footer-note a {
+        color: #6a1b9a;
+    }
+    hr {
+        margin-top: 20px;
+        border: 1px solid #ccc;
+    }
+    footer {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo Sekolah">
+    <h1>PENDAFTARAN SEMINAR TEKNOLOGI 2026</h1>
+</header>
+
+<p class="tagline"><em>Bersama Teknologi, Wujudkan Masa Depan</em></p>
+
+<nav>
+    <a href="#">Beranda</a> |
+    <a href="#">Informasi</a> |
+    <a href="#">Pendaftaran</a> |
+    <a href="#">Kontak</a>
+</nav>
+
+<div class="info">
+    <p>Seminar ini akan dilaksanakan pada:</p>
+    <p><strong>Kamis, 28 Agustus 2026</strong><br>
+    <strong>Pukul 08.00 - 15.00 WIB</strong></p>
+    <p><strong>Tempat: Aula SMK Telkom Malang</strong></p>
+</div>
+
+<form>
+<table>
+    <caption>FORM PENDAFTARAN</caption>
+    <tr>
+        <td class="label-col">Nama Lengkap</td>
+        <td><input type="text" name="nama" required></td>
+    </tr>
+    <tr>
+        <td class="label-col">Jenis Kelamin</td>
+        <td>
+            <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+            <input type="radio" name="gender" value="Perempuan"> Perempuan
+        </td>
+    </tr>
+    <tr>
+        <td class="label-col">Tanggal Lahir</td>
+        <td><input type="date" name="tanggal_lahir"></td>
+    </tr>
+    <tr>
+        <td class="label-col">Kelas</td>
+        <td>
+            <select name="kelas">
+                <option value="">Pilih Kelas</option>
+                <option value="X">X</option>
+                <option value="XI">XI</option>
+                <option value="XII">XII</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td class="label-col">Email</td>
+        <td><input type="email" name="email"></td>
+    </tr>
+    <tr>
+        <td class="label-col">No HP</td>
+        <td><input type="tel" name="no_hp"></td>
+    </tr>
+    <tr>
+        <td class="label-col">Pilihan Paket</td>
+        <td class="checkbox-group">
+            <label><input type="checkbox" name="paket" value="Seminar"> Seminar</label>
+            <label><input type="checkbox" name="paket" value="Workshop"> Workshop</label>
+            <label><input type="checkbox" name="paket" value="Makan Siang"> Makan Siang</label>
+            <label><input type="checkbox" name="paket" value="Sertifikat"> Sertifikat</label>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="btn-row">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </td>
+    </tr>
+</table>
+</form>
+
+<p class="summary-title">Ringkasan Pendaftaran</p>
+<table>
+    <tr>
+        <th>No</th>
+        <th>Item</th>
+        <th>Keterangan</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Nama Lengkap</td>
+        <td>........................</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Kelas</td>
+        <td>........................</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Paket yang Dipilih</td>
+        <td>........................</td>
+    </tr>
+</table>
+
+<p class="footer-note">
+    Informasi lebih lanjut kunjungi website resmi kami di
+    <a href="http://www.smktelkom-mlg.sch.id">www.smktelkom-mlg.sch.id</a>
+</p>
+
+<p class="footer-note">
+    Harga Paket sudah termasuk pajak 10% *<br>
+    Pembayaran dapat dilakukan maksimal H-3 kegiatan **
+</p>
+
+<hr>
+<footer>&copy; 2026 SMK Telkom Malang. All Rights Reserved.</footer>
+
+</body>
+</html>
